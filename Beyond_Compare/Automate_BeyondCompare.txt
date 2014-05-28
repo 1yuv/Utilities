@@ -1,0 +1,23 @@
+"C:\program files\beyondcompare 2\bc2.exe" @D:\beyond\foldercompare.txt /silent
+
+Content of D:\beyond\foldercompare.txt is : 
+
+Load "D:\beyond\Folder1" "D:\beyond\Folder2"
+expand all
+select all
+compare
+folder-report layout:side-by-side options:display-mismatches output-to:D:\beyond\report.html output-options:html-color
+
+
+=================================
+Passing from parameter
+=================================
+Calling - > "C:\program files\beyondcompare 2\bc2.exe" @D:\beyond\foldercompareparams.txt D:\beyond\Folder1 D:\beyond\Folder2 /silent
+
+Content inside foldercompareparams.txt
+-----------------------------------
+Load "%1" "%2"
+expand all
+select all
+compare
+folder-report layout:side-by-side options:display-mismatches output-to:D:\beyond\report.html output-options:html-color
