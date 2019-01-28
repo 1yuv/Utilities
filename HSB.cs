@@ -1,3 +1,6 @@
+/* 
+Test changes on master
+*/
 public class HSB
     {
         public static Color getHSBColor(float hue, float saturation, float brightness)
